@@ -1,0 +1,12 @@
+const bitcoinPrice = prompt("What is Bitcoin price today?");
+const dollars = prompt("How much $ do you have?");
+
+if (isNaN(bitcoinPrice) || 
+   isNaN(dollars) || 
+   bitcoinPrice <= 0 || 
+   dollars < 0 ) {
+   alert(`Bad values.`);
+}
+else {
+   console.log(`You can buy ${dollars/bitcoinPrice} BTC`);
+}
